@@ -43,6 +43,11 @@ git clone git@github.com:Tchilo/school-library-oop.git
 cd school-library-oop.git
 ```
 
+### Run Program
+```
+ruby main.rb
+```
+
 
 ## Author
 

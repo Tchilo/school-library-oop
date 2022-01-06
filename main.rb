@@ -108,7 +108,7 @@ class Methods
 
     print 'Date: '
     rental_date = gets.chomp
-
+    puts 'the rental has been successfully'
     @rental_array.push(Rental.new(rental_date, book_chosen, person_chosen))
   end
 
