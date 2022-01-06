@@ -12,6 +12,7 @@ class Person
 
   attr_accessor :name, :age
   attr_reader :id
+  attr_accessor :rentals
 
   def add_rental(book, date)
     Rental.new(date, self, book)
