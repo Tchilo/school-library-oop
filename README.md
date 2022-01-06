@@ -39,13 +39,8 @@ Ruby
 
 ### Setup
 ```
-git clone git@github.com:Tchilo/school-library.git
-cd school-library.git
-```
-
-### Run Program
-```
-ruby school-library.rb
+git clone git@github.com:Tchilo/school-library-oop.git
+cd school-library-oop.git
 ```
 
 
