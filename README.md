@@ -12,10 +12,10 @@
 
 > |Screenshot 1|Screenshots 2|
 > |--------------|----------------|
-> |![](app1.png)|![](app2.png)|!
+> |![](./img/app1.png)|![](./img/app2.png)|!
 > |Screenshot 3|Screenshots 4|
 > |--------------|----------------|
-> |![](app3.png)|![](app4.png)|!
+> |![](./img/app3.png)|![](./img/app4.png)|!
 
 
 Additional description about the project and its features.
