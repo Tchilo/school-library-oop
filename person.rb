@@ -10,9 +10,8 @@ class Person
     @rentals = []
   end
 
-  attr_accessor :name, :age
+  attr_accessor :name, :age, :rentals
   attr_reader :id
-  attr_accessor :rentals
 
   def add_rental(book, date)
     Rental.new(date, self, book)
