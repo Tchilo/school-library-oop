@@ -1,4 +1,5 @@
 require_relative('./app')
+require_relative('./methods')
 
 class App
   def self.home_page
