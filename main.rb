@@ -1,9 +1,9 @@
-require_relative('./app')
+require_relative('./methods')
 
 def main 
   app = App.new
     puts 'Welcome to the School Library App!'
-    puts "\n"
+    puts '\n'
     puts 'Please choose an option by entering a number: '
 
     @content = {
