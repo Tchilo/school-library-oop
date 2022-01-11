@@ -12,7 +12,6 @@ class App
   end
 
  def home_page(num)
-  puts num.class
   loop do
     case num
     when 1
