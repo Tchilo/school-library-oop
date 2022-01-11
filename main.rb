@@ -1,7 +1,7 @@
 require_relative('./app')
 
-class App
-  def self.home_page
+def main 
+  app = App.new
     puts 'Welcome to the School Library App!'
     puts "\n"
     puts 'Please choose an option by entering a number: '
@@ -20,36 +20,7 @@ class App
       puts "#{index} - #{string}"
     end
 
-    Integer(gets.chomp)
+    num = Integer(gets.chomp)
+    app.home_page(num)
   end
-
-  method = Methods.new
-
-  loop do
-    case home_page
-    when 1
-      method.book_list
-    when 2
-      method.people_list
-    when 3
-      method.create_person
-    when 4
-      method.create_book
-    when 5
-      method.create_rental
-    when 6
-      method.rental_list
-    when 7
-      puts 'Thank you for using the app!'
-      exit
-    else
-      puts 'Choose a number between 1 to 7'
-    end
-  end
-end
-
-def main
-  App.new
-end
-
 main
