@@ -1,9 +1,11 @@
-require_relative('./methods')
+require_relative('./app')
 
-def main 
+def main
   app = App.new
-    puts 'Welcome to the School Library App!'
-    puts '\n'
+  # sleep 2
+  puts 'Welcome to the School Library App!'
+  puts "\n"
+  loop do
     puts 'Please choose an option by entering a number: '
 
     @content = {
@@ -21,6 +23,11 @@ def main
     end
 
     num = Integer(gets.chomp)
+    break if num == 7
+
     app.home_page(num)
   end
+  puts 'Thanks for using the app!'
+end
+
 main
