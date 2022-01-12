@@ -14,4 +14,3 @@ class Teacher < Person
     "[Teacher] #{super}"
   end
 end
-
