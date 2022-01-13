@@ -55,12 +55,11 @@ class Persistor
   end
 
   def create_teacher(person_json)
-    id = person_json['id'].to_i
+    person_json['id'].to_i
     name = person_json['name']
     age = person_json['age']
     specialization = person_json['specialization']
-    teacher = Teacher.new(name: name, age: age, specialization: specialization)
-    teacher
+    Teacher.new(name: name, age: age, specialization: specialization)
   end
 
   def create_student(person_json, classroom)
