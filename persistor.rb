@@ -1,4 +1,4 @@
-require 'json'
+require 'json' # rubocop:todo Layout/EndOfLine
 
 class Persistor
   def hydrate(classroom)
@@ -55,7 +55,7 @@ class Persistor
   end
 
   def create_teacher(person_json)
-    # id = person_json['id'].to_i
+    id = person_json['id'].to_i # rubocop:todo Lint/UselessAssignment
     name = person_json['name']
     age = person_json['age']
     specialization = person_json['specialization']
@@ -74,10 +74,8 @@ class Persistor
   end
 
   def persist(people:, rentals:, books:)
-    # rubocop:disable Style / FileWrite
-    File.open('people.json', 'w') { |file| file.write JSON.generate(people) } unless people.empty?
-    File.open('books.json', 'w') { |file| file.write JSON.generate(books) } unless books.empty?
-    File.open('rentals.json', 'w') { |file| file.write JSON.generate(rentals) } unless rentals.empty?
-    # rubocop:enable Style / FileWrite
+    File.open('people.json', 'w') { |f| f.write JSON.generate(people) } unless people.empty?
+    File.open('books.json', 'w') { |f| f.write JSON.generate(books) } unless books.empty?
+    File.open('rentals.json', 'w') { |f| f.write JSON.generate(rentals) } unless rentals.empty?
   end
 end
