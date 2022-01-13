@@ -1,4 +1,4 @@
-require 'json' # rubocop:todo Layout/EndOfLine
+require 'json'
 
 class Persistor
   def hydrate(classroom)
