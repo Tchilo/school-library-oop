@@ -76,8 +76,10 @@ class Persistor
   end
 
   def persist(people:, rentals:, books:)
+    # rubocop:disable  Style/FileWrite
     File.open('people.json', 'w') { |f| f.write JSON.generate(people) } unless people.empty?
     File.open('books.json', 'w') { |f| f.write JSON.generate(books) } unless books.empty?
     File.open('rentals.json', 'w') { |f| f.write JSON.generate(rentals) } unless rentals.empty?
+    # rubocop:enable Style/FileWrite
   end
 end
