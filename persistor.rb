@@ -55,11 +55,13 @@ class Persistor
   end
 
   def create_teacher(person_json)
-    id = person_json['id'].to_i # rubocop:todo Lint/UselessAssignment
+    id = person_json['id'].to_i
     name = person_json['name']
     age = person_json['age']
     specialization = person_json['specialization']
-    Teacher.new(name: name, age: age, specialization: specialization)
+    teacher = Teacher.new(name: name, age: age, specialization: specialization)
+    teacher.id = id
+    teacher
   end
 
   def create_student(person_json, classroom)
@@ -74,10 +76,8 @@ class Persistor
   end
 
   def persist(people:, rentals:, books:)
-    # rubocop:disable  Style/FileWrite
     File.open('people.json', 'w') { |f| f.write JSON.generate(people) } unless people.empty?
     File.open('books.json', 'w') { |f| f.write JSON.generate(books) } unless books.empty?
     File.open('rentals.json', 'w') { |f| f.write JSON.generate(rentals) } unless rentals.empty?
-    # rubocop:enable Style/FileWrite
   end
 end

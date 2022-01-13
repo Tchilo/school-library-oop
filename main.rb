@@ -1,5 +1,5 @@
 require_relative 'classroom'
-require_relative 'app'
+require_relative 'handlers'
 require_relative 'persistor'
 
 class App
