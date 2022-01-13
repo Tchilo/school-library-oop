@@ -1,3 +1,5 @@
+# rubocop:disable ...
+
 require 'json'
 
 class Persistor
