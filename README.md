@@ -56,6 +56,16 @@ ruby main.rb
 - GitHub: [@githubhandle](https://github.com/Tchilo)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/TaroChilongoshi)
 
+👤 **Isaac Lumato**
+
+- GitHub: [@githubhandle](https://github.com/isaka-lumato)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/lumatoisaac)
+
+👤 **Yahya El Ganayni**
+
+- GitHub: [@githubhandle](https://github.com/yahyaelganyni1)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/yahya-el-ganayni-a456115b/)
+
 
 
 ## 🤝 Contributing
